@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+
+    <TextView
+        android:id="@+id/recipeDisplayTextView"
+        android:layout_width="377dp"
+        android:layout_height="425dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="400dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/printRecipeButton"
+        android:layout_width="109dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginBottom="172dp"
+        android:text="VIEW RECIPES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipeDisplayTextView" />
+
+    <Button
+        android:id="@+id/ShowAverageButton"
+        android:layout_width="109dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="172dp"
+        android:text="SHOW AVERAGE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/printRecipeButton"
+        app:layout_constraintTop_toBottomOf="@+id/recipeDisplayTextView" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="109dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="113dp"
+        android:text="BACK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recipeDisplayTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
